@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="container__item sub-container header-container">
+    <div class="sub-container__item"></div>
+    <div class="sub-container__item"></div>
+    <div class="sub-container__item"></div>
+  </div>
+  <div class="container__item container__item--large"></div>
+  <div class="container__item sub-container footer-container">
+    <div class="sub-container__item"></div>
+    <div class="sub-container__item"></div>
+    <div class="sub-container__item"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: #6592CF;
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+  }
+
+  .container__item {
+    background-color: #243D83;
+    height: 20px;
+    width: 300px; 
+  }
+  
+  .container__item--large { 
+     height: 120px;
+  }
+  
+  .container__item + .container__item { 
+    margin-top: 20px; 
+  }
+
+  .sub-container { 
+    display: flex;
+    height: 20px;
+    width: 300px;
+    background-color: #6592CF;
+  }
+  
+  .sub-container__item + .sub-container__item { 
+    margin-left: 20px; 
+  }
+
+  .sub-container__item {
+    background-color: #243D83!important;
+    width: 60px;
+    height: 20px;
+  }
+  .header-container .sub-container__item:last-child {
+    flex-grow: 1; 
+  }
+
+  .footer-container .sub-container__item:first-child {
+    flex-grow: 1; 
+  }
+  
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
